@@ -1,0 +1,20 @@
+
+
+echo "Committing File to git..."
+
+arr=$(echo $@ | tr ";" "\n")
+
+user=$whoami
+filename="date +'%D-%H-%M'"
+
+for x in $arr
+do
+    git add $x
+    echo $x >> `whoami
+
+done
+
+git commit -m "Commiting to Git"
+
+
+
